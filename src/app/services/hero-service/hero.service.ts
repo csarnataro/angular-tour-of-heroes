@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
-import { Hero } from '~/models/hero';
-import { HEROES } from '~/mock.users';
 import { Observable, of } from 'rxjs';
 import { map, pluck } from 'rxjs/operators';
-import { MessageService } from '~/services/message-service/message.service';
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Hero } from '../../models/hero';
+import { HEROES } from '../../mock.users';
+import { MessageService } from '../../services/message-service/message.service';
 
 @Injectable({
   providedIn: 'root'
